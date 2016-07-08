@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyGraphController">
-	<!-- TODO Add Nodes -->
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyGraphController">
+   <center>
+      <AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="Canv" height="598.0" layoutX="271.0" layoutY="139.0" width="598.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane maxHeight="100.0" maxWidth="600.0" minHeight="100.0" minWidth="600.0" prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="215.0" layoutY="10.0" text="Paint" textAlignment="CENTER" textFill="#4a5bda">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane maxHeight="100.0" maxWidth="600.0" minHeight="100.0" minWidth="600.0" prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Btn1" layoutX="462.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#OnBtn1" text="Button" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="29.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
 </BorderPane>
