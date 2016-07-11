@@ -38,6 +38,7 @@
             </Button>
             <Slider fx:id="SHor" layoutX="69.0" layoutY="23.0" max="600.0" onMouseDragged="#onScrollH" prefHeight="14.0" prefWidth="296.0" value="300.0" />
             <Slider fx:id="SVer" layoutX="69.0" layoutY="55.0" max="600.0" onMouseDragged="#onMouseDragV" prefHeight="14.0" prefWidth="295.0" value="300.0" />
+            <Slider fx:id="SVer1" layoutX="69.0" layoutY="77.0" max="600.0" onMouseDragged="#onMouseDragV1" prefHeight="14.0" prefWidth="295.0" value="300.0" />
             <TextField fx:id="txtH" layoutX="379.0" layoutY="18.0" prefHeight="25.0" prefWidth="70.0" />
             <TextField fx:id="txtV" layoutX="379.0" layoutY="50.0" prefHeight="25.0" prefWidth="70.0" />
          </children>
