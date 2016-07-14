@@ -10,6 +10,51 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 
 public class GameLifeController {
+	
+	private class myField{
+		private myDot myDots[][];
+		private int sizeX, sizeY;
+		private  GraphicsContext gc;
+		
+		public void myField(GraphicsContext parGC, int parW, int parH){
+			for(int i = 0;i<parH;i++){
+				for(int j = 0; j<parW;j++){
+					myDots[i][j] = new myDot();
+				}
+			}
+			
+		}
+		
+		
+		public int getSizeX() {
+			return sizeX;
+		}
+		public void setSizeX(int sizeX) {
+			this.sizeX = sizeX;
+		}
+		public int getSizeY() {
+			return sizeY;
+		}
+		public void setSizeY(int sizeY) {
+			this.sizeY = sizeY;
+		} 		
+	}
+	
+	
+	public class myDot{
+		private  Color myDotColor;
+		private int myDotFriends;
+		public void myDot(){
+			myDotColor = Color.BLACK;
+			myDotFriends = 0;
+		};
+		public void myDot(Color c){
+			myDotColor = c;
+			myDotFriends = 0;
+		};
+
+	}
+	
 	@FXML
 	private Canvas Field;
 	@FXML
