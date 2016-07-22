@@ -16,7 +16,7 @@
          </image></ImageView>
       <Pane layoutX="686.0" layoutY="14.0" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #00FFCC;" AnchorPane.leftAnchor="720.0" AnchorPane.topAnchor="20.0">
          <children>
-            <Canvas fx:id="CanvFX" height="800.0" onDragDetected="#onDDetected" onDragDone="#onDDone" onMouseDragOver="#onDOver" onMouseDragged="#onMouseD" width="800.0" />
+            <Canvas fx:id="CanvFX" height="800.0"  onMouseDragged="#onMouseDragged" width="800.0" />
          </children>
       </Pane>
       <Pane layoutX="816.0" layoutY="714.0" prefHeight="150.0" prefWidth="800.0" style="-fx-background-color: #F0CC00;" AnchorPane.leftAnchor="720.0" AnchorPane.topAnchor="840.0">
